@@ -15,6 +15,7 @@ const COUNTRY_QUERY = gql`
             }
             languages {
                 name
+                native
             }
             native
         }
@@ -82,7 +83,7 @@ function GetSingleCountry( {match} ) {
                 <h4>Languages:</h4>
                 <ul>
                     {country.languages.map((lang, i) => {
-                        return <li key={i}>{lang.name}</li>
+                        return <li key={i}>{lang.name} <span>({lang.native})</span></li>
                     })}
                 </ul>
             </div>

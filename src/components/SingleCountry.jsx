@@ -8,7 +8,14 @@ const ListItem = styled.li`
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 2px gray;
-    margin-bottom: 5px;
+    margin-bottom: 5px; 
+    cursor: pointer;
+    transition-duration: .5s;
+
+    &:hover {
+        box-shadow: 0 0 10px black;
+        transition-duration: .5s;
+    }
 `;
 
 const ListHeader = styled.div`

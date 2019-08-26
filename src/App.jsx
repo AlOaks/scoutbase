@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
-import { createBrowserHistory } from 'history';
 import styled, { createGlobalStyle } from 'styled-components';
 import { Reset } from 'styled-reset';
 import { Normalize } from 'styled-normalize';
@@ -52,7 +51,6 @@ const Header = styled.ul`
     }
 `
 
-const appHistory = createBrowserHistory();
 
 function App() {
 

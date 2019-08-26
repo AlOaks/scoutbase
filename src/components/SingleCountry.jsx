@@ -67,7 +67,6 @@ export default class SingleCountry extends Component {
             <ListItem onClick={() => this.setState({visible: !this.state.visible})}>
                 <ListHeader>
                     <p>{country.name}</p>
-                    <span>v</span>
                 </ListHeader>
                 {this.state.visible ? 
                 <Fade opposite>

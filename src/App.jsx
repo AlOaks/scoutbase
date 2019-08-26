@@ -61,7 +61,7 @@ function App() {
                 <Reset />
                 <Normalize />
                 <Global />
-                <Router history={appHistory}>
+                <Router>
                     <Header>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/countries">Countries</Link></li>
@@ -70,7 +70,7 @@ function App() {
                     <Switch>
                         <Route path="/" exact component={Home} />
                         <Route path="/countries" exact component={Countries}/>
-                        <Route path="/countries/:code" exact component={CountryDetail} />
+                        <Route path="/countries/:code" component={CountryDetail} />
                         <Route component={NoMatch} />
                     </Switch>       
                 </Router>

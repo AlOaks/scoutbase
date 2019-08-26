@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 import CountriesList from './CountriesList.jsx';
 
 export default class Countries extends Component {

@@ -6,7 +6,6 @@ export default class CountryDetail extends Component {
     constructor(props) {
         super(props);
     }
-
     
     render() {
         return (

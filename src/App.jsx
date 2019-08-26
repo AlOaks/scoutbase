@@ -69,7 +69,7 @@ function App() {
                         
                     <Switch>
                         <Route path="/" exact component={Home} />
-                        <Route path="/countries" exact component={Countries}/>
+                        <Route path="/countries" component={Countries}/>
                         <Route path="/countries/:code" component={CountryDetail} />
                         <Route component={NoMatch} />
                     </Switch>       
